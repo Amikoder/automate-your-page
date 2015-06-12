@@ -1,0 +1,153 @@
+ body {
+  font-family: courier;
+  background-color: white;
+}
+
+
+/*.TOC {
+  background-color: #BDBDBD;
+  max-width: 500px;
+  margin: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9px;
+  padding: 3px;
+  
+}
+
+/* TOC attributed to http://orgmode.org/worg/exporters/beamer/tutorial.html */
+#table-of-contents {
+  font-size: 10pt;
+  position: fixed;
+  left: 0em;
+  top: 0em;
+  background: white;
+  line-height: 12pt;
+  text-align: right;
+  box-shadow: 0 0 1em #777777;
+  -webkit-box-shadow: 0 0 1em #777777;
+  -moz-box-shadow: 0 0 1em #777777;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  /* ensure doesn't flow off the screen when expanded */
+  max-height: 100%;
+  overflow: auto; }
+    #table-of-contents h2 {
+  font-size: 13pt;
+  max-width: 9em;
+  border: 0;
+  font-weight: normal;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.05em;
+  padding-bottom: 0.05em; }
+    #table-of-contents #text-table-of-contents {
+  display: none;
+  text-align: left; }
+    #table-of-contents:hover #text-table-of-contents {
+  display: block;
+  padding: 0.5em;
+  margin-top: -1.5em; }
+
+h1 {
+    text-align: center;
+    color: black;
+    background-color: green;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+ul {
+	list-style-type: none; /* bullets removed */
+}
+
+li {
+	font-size: 15px;
+	line-height: 20px; 
+}
+
+.unit {
+  text-align: center;
+  background-color: green;
+  margin: 5px;
+  border-radius: 9px;
+  padding: 3px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+  border-style: solid;
+}
+
+.section {
+  background-color: #CEF6CE;
+  text-align: left; 
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-style: solid ;
+  border-color: black;
+  border-width: 2px;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+} 
+
+span.code {
+  background-color: #BBBBBB;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+.code_box {
+  background-color: #BBBBBB;
+  text-align: left;
+  border-style: solid; 
+  border-width: 1px;
+  border-color: black;
+  padding: 2px 10px;
+  font-family: monospace;
+  white-space: pre-line; /* originally added "pre" to eliminate a billion <br>'s, 
+  as well as indention classes, but it created a bunch of empty space on the left.
+  Pre-line got rid of the empty left space, but necessitated 
+  keeping indents, and it also made some of the boxess unnecessarily wide*/
+  display: inline-block;
+  
+}
+img.box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+span.indent {
+  margin-left: 20px;
+}
+
+span.dblindent {
+  margin-left: 40px;
+}
+
+span.tripindent {
+  margin-left: 60px;
+}
+
+span.octindent {
+  margin-left: 140px;
+}
+

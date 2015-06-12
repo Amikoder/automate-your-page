@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+<head>
+  <title>IPND Notes</title>
+  <link rel="stylesheet" href="IPN_Stage1CSS.css">
+  <meta charset="UTF-8"> 
+</head>
+
+<body> 
+ <h1>IPND May, 2015</h1>
+  <div id="table-of-contents">
+    <h2>Table of Contents</h2>
+    <div id="text-table-of-contents">
+      <ol>
+      <li><a href="#Unit-1.0">Unit One.Zero</a>
+        <ul>
+          <li><a href="#1.basics">Basics</a></li>
+          <li><a href="#1.elements">Elements</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-1.2">Unit One.Two</a>
+        <ul>
+          <li><a href="#1.stealing">Learning from Others</a></li>
+          <li><a href="#1.box">Boxes</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-1.3">Unit One.Three</a>
+        <ul>
+          <li><a href="#1.CSS">CSS Basics</a></li>
+          <li><a href="#1.CSS-benefits">CSS Benefits</a></li>
+          <li><a href="#1.images">Images</a></li>
+          <li><a href="#1.steps">Styling Process</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-2.1">Unit Two.One</a>
+        <ul>
+          <li><a href="#2.intro"> Intro to Programming</a></li>
+          <li><a href="#2.py">Intro to Python</a></li>
+          <li><a href="#2.gram">Programming Language Grammar</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-2.2">Unit Two.Two</a>
+        <ul>
+          <li><a href="#2.vari"> Variables</a></li>
+          <li><a href="#2.string">Strings</a></li>
+          <li><a href="#2.find">.find</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-2.3">Unit Two.Three</a>
+        <ul>
+          <li><a href="#2.fun">Functions</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-2.4">Unit Two.Four</a>
+        <ul>
+          <li><a href="#2.eqcomp">Equality Comparisons</a></li>
+          <li><a href="#2.loops">If/While Loops</a></li>
+          <li><a href="#2.else">Else</a></li>
+          <li><a href="#2.orand">Or/And</a></li>
+          <li><a href="#2.max">Max</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-2.5">Unit Two.Five</a>
+        <ul>
+          <li><a href="#2.bug">Debugging</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-2.6">Unit Two.Six</a>
+        <ul>
+          <li><a href="#2.lists">List Basics</a></li>
+          <li><a href="#2.mutation">Mutation</a></li>
+          <li><a href="#2.a">Aliasing</a></li>
+          <li><a href="#2.operands">Operands</a></li>
+        </ul>
+      </li>
+      <li class="TOC">
+        <a href="#Unit-2.7">Unit Two.Seven</a>
+        <ul>
+          <li><a href="#2.probsolv">Solving Problems</a>
+        </ul>
+      </li>
+      </ol>
+    </div>
+  </div>
+ 
+ <div class="unit" id="Unit-1.0">
+   <h2>Unit One.Zero</h2>
+     <div class="section" id="1.basics">
+       <div class="section-title">
+         The Internet
+       </div>
+          <div class="notes">
+           <p> 
+            People with computers download browsers; browsers, using HTTP, send out queries and return web pages plucked from super-space-saving filing-cabinet computers called servers...hidden in air conditioned closets. <!--or warehouses! no offense meant-->
+           </p>
+           <p>
+            These pages are usually formatted using HTML, 
+            <b>hypertext markup language</b>, and can contain <em>almost anything</em>: text, images, videos, links, pdf's, multiple levels.  The browser reads the text, markup and references to turn the information into something user-friendly.
+           </p>
+          </div>
+       </div>
+
+   <div class="section">
+     <div class="section-title" id="1.elements">
+         Elements
+     </div>
+       <div class="notes">
+         <p>
+           Elements are used in markup, which controls how a webp age, and its content, are rendered by the browser.  Elements consist, usually, of an <b>opening tag, content, and a closing tag</b>. Some elements, called <span class="bold">void tags</span>, don't need closing tags. 
+          </p>
+             <div class="code_box"> 
+              Void Tags:
+
+                Line break: &lt;br&gt; 
+                and the image element: &lt;img  src="url" alt="text"&gt; 
+
+               Non-Void Tags:
+                Bold, and/or Strong: &lt;b&gt;text&lt;/b&gt;, &lt;strong&gt;text&lt;/strong&gt;
+            </div>
+         <p>
+            Elements can be either <b>inline</b> or <b>block</b>.  Inline elements create no additional space around them and can "butt" right up against text.  Block elements create a box in which their content resides. 
+         </p>   
+              <div class="code_box">
+                Line break &lt;br&gt; is inline, but paragraph &lt;p&gt;&lt;/p&gt;<p>is block text</p> and created the space preceding and following the above line. 
+              </div>
+         <p>
+            But both are necessary to manage the "white space" on an HTML page, since spaces and carriage returns are rendered null when a browser reads HTML. Multiple spaces and any carriage returns are turned into a single space.  Space, therefore, has to be deliberately coded in.
+         </p>
+         <p>
+           Attributes, span/div
+         <br>
+           Attributes modify their elements, or are properties of elements. Span and Div, for instance, can have attributes added to them. Both elements contain text, Span is inline and Div is block.  Neither are void tags.  Div behaves much like the paragraph tag, but doesn't create as much space around it.
+         </p>
+      </div>
+    </div>
+   </div>
+ <div class="unit" id="Unit-1.2">
+   <h2>Unit One.Two</h2> <!--because being a numeral behind is awkward-->
+   <div class="section" id="1.stealing">
+         <div class="section-title">
+          Learning Code from Other Pages
+         </div>
+      <div class="notes">
+        <p>
+          Looking at the code of existing web pages provides excellent examples of code-in-action. Not only can you see the end product, but <em>how</em> the elements and style are formatted correctly to follow HTML (or CSS) syntax and rules.
+        </p>
+        <p>
+          Google Chrome's <b>developer tools</b> provides user-friendly ways to sift through complex HTML structure, as well as see how coders are minimizing redundancy (and errors). It's called a tool because not only can you use it, but through that use you add coding skill to your belt, so to speak.  
+        </p>
+        <p>
+          HTML structure can be complex due to the <b>"tree-like"</b> nature of it. Within elements lie additional elements.  This causes the wavy pattern we see when looking at HTML code; the further <b>indented</b> something is, the deeper it's nested. And, when looking at the page itself, this nesting is rendered as boxes within boxes (though the borders of the boxes may be invisible).
+        </p>
+        <p>
+         Programmer's text editors also make learning/performing programming easier.  Programs for writing programs! Or web pages, in this case.  They will, for instance, provide a corresponding closing tag for your opening one.
+        </p>
+      </div>
+   </div>
+   <div class="section" id="1.box">
+         <div class="section-title">
+          Boxes
+         </div>
+      <div class="notes">
+        <p>
+          Everything on a web page falls within the confines of a box. There's a standard model for the creation and formatting of boxes.
+        </p>
+          <img class ="box" src="boxmodel-image.png" alt="Box Model" style="width:304px;height:228px">
+        <p>
+          The padding, border, and margin all have the capability of being customized with differing sizes.  The total size of the box is from top margin to bottom, and right to left.  So, margin width (or height) plus border width plus padding width plus content width.  These values can be set in pixels, or percentages.  Percentages change with the screen size, but pixels are fixed.  If using pixels, the max width option can help maintain the integrity of a box.  Speaking of integrity, it's important to  make sure boxes will be rendered correctly across browsers.  Browser specific prefixes such as webkit, moz, and ms with the style definition will help.
+        </p>
+        <p>
+          Boxes must be positioned on the page as well.  Without defining the box values, the box will go the whole width of a page.  Using a flex box will allow boxes to sit next to each other.  Manipulating individual values will also help place boxes.  
+        </p>
+        <p>
+          It's also helpful to think of block elements as creating boxes around them, while inline elements go within boxes.  Some box elements have to be structured within one another as well. The paragraph element, for instance, has to be within div(ision?) elements.  If you try to put a div within a paragraph, your code will not verify though the browser may be able to render it how you intended.
+        </p>
+      </div>
+   </div>
+ </div>  
+ <div class="unit" id="Unit-1.3">
+   <h2>Unit One.Three</h2>
+   <div class="section" id="1.CSS">
+     <div class="section-title">
+         CSS
+     </div>
+      <div class="notes">
+         <p> 
+           As mentioned previously, CSS controls how an HTML page <em>looks</em>.  It also saves coders substantial time by allowing them to apply a repetitive style to multiple elements of the same type.
+         </p>
+         <p>
+          There are three ways to add style to a page:
+         <br>
+          1. Writing it in the head element of the HTML page. 
+         <br>
+          2. Within the head element, add a link to a separate CSS file. This keeps large projects organized, and looks something like this:
+         </p>
+            <div class="code_box">
+              &lt;link: rel="stylesheet" type="text/css" href="main.css"&gt;
+            </div>
+         <p>
+          3. Writing the style inline with the HTML.  Not the best choice, leads to a lot of repetition.  
+         </p>
+     </div>
+   </div>
+  
+   <div class="section" id="1.CSS-benefits">
+     <div class="section-title">
+         Some Particulars of CSS
+     </div>
+       <div class="notes">
+         <p>
+           CSS both helps avoid repetition and maintain consistency by applying a singular style to an unlimited number of instances of the same element. This, handily enough, also makes implementing changes easier. It's also ruled by an abstract concept called inheritance.  In a page of CSS code, the most specific rule applies. If a class has a specific attribute, and there's a class nested within it without any attributes specified, the nested class shares the attribute of the parent (ancestor) class. 
+         </p>
+              <div class="code_box"> 
+                A CSS Element:
+
+                h1 {
+                background-color: black;
+                }
+
+               "h1" is the selector. 
+               "background-color: black;" is the declaration
+                "background-color is the property
+                and "black" is the value
+             </div>
+         <p>
+            One can find CSS elements in almanacs, such as this <a href="https://css-tricks.com/almanac/">one</a>.
+         </p> 
+       </div>
+     </div>
+  
+  
+   <div class="section" id="1.images">
+     <div class="section-title">
+         Images
+     </div>
+         <div class="notes">
+           <p>
+             Save images to an image folder saved within project file.
+           </p>
+         </div>
+     </div>
+   <div class="section" id="1.steps">
+     <div class="section-title">
+         Steps to Styling/Coding
+     </div>
+       <div class="notes">
+          <ol>
+           <li>Look for natural boxes</li>
+           <li>Look for repeated styles & semantic elements </li>
+           <li>Write HTML </li>
+           <li>Apply styles (big to small) </li>
+           <li>Fix things (check various browsers, and resize windows) </li>
+           <li>Verify <a href="http://validator.w3.org/#validate_by_input">HTML</a> and <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a></li>
+          </ol>
+         <p>
+           Verify to ensure that your page and code displays properly in all browsers.  Very helpful for the debugging process! 
+       </div>
+     </div>
+   </div>
+ <div class="unit" id="Unit-2.1">
+   <h2>Unit Two.One</h2>
+     <div class="section" id="2.intro">
+       <div class="section-title">
+         Programming Introduction
+       </div>
+          <div class="notes">
+           <p> 
+            <b>Computers</b> are machines that execute programs. <b>Programs</b> describe specific sequences of steps that computers execute. Programs are written in <b>languages</b> designed specifically to ease the writing and reading by programmers, as well as executing by computers. The languages have to be precise.  One such language is <b>Python</b>, which is in turn interpreted by a program for execution--the Python Interpreter.
+            <br><br>
+            Miscellaneous:
+            <br><br>
+            <b>Compiler</b>: Middle man first built by Grace Hopper.  A program that translates a program written in a programming language easy for humans to use into a language computers execute easier.   
+            <br>
+            <b>Interpreter</b>: Same thing as a compiler, save that the compiler translates at once while the interpreter translates sectionally as the program runs.
+           </p>
+          </div>
+       </div>
+
+   <div class="section">
+     <div class="section-title" id="2.py">
+         Python
+     </div>
+       <div class="notes">
+         <p>
+           Python is a <b>designed</b> language. That is, it was created with the sole and particular purpose of programming, being written and executed.  <b>Natural</b> languages like English or French are too ambiguous and verbose for programming.
+         </p>
+         <p>
+          Miscellaneous:
+          <br><br>
+          Requires an interpreter.  
+          <br>
+          # inserts a python comment
+         </p>
+
+      </div>
+    </div>
+   <div class="section">
+     <div class="section-title" id="2.gram">
+         Grammar
+     </div>
+       <div class="notes">
+         <p>
+           Programming languages require strict adherence to their grammar rules or the computer doesn't know how to interpret them.  Computers can't guess at the intended meaning.  It will return a <b>syntax error</b>.
+         </p>
+         <p>
+          <b>Backus-Naur Form:</b>  &lt;Non-Terminal&gt; --> replacement
+            <br>
+            <br>
+            Notation used to describe a programming language.  The replacement can be any sequence of zero or more <b>non-terminals</b> and <b>terminals</b>.  Terminals never appear on the left side.  They are the end of the line, not replaceable with anything else.  
+         </p>
+      </div>
+    </div>
+   </div>
+ <div class="unit" id="Unit-2.2">
+   <h2>Unit Two.Two</h2>
+     <div class="section" id="2.vari">
+       <div class="section-title">
+         Variables
+       </div>
+          <div class="notes">
+           <p> 
+            Variables in programming are similar to variables in algebra.  A value is assigned a designation, the name composed of <b>underscores, letters, and numbers</b> (though it can't start with a number), and until that designation is assigned another value, the name can be used in expressions to represent that value.  For the computer to understand the use of a variable, a programmer has to use an <b>assignment statement</b>.
+           </p>
+            <div class="code_box"> 
+                Assignment Statement
+                
+                Name = Expression
+                
+                speed_of_light = 299792458 
+                billionth = 1.0 / 1000000000 
+                nanostick = speed_of_light * billionth * 100
+                
+                And the command "print nanostick" will direct the computer to execute the equation:
+                
+                299792458 * (1.0 / 1000000000) * 100                
+            </div>
+            <p>
+              Some benefits of using variables include improving code readability, storing a singular value of data, and a way to change that value.  The fewer times you have to write out 9 digit numbers, the fewer chances for error.
+            </p>
+            <p>
+              Not only can variables be used on either side of the equation, as evinced above, but the <b>same</b> variable can be used on either side.
+            </p>
+              <div class="code_box">
+               Printed in order, one at a time:
+               
+               days = 7 * 7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-Would print as 49
+               days = 48&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-Would print as 48
+               days = days - 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-Would print as 47
+               days = days - 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;-Would print as 46
+              </div>
+          </div>
+       </div>
+
+   <div class="section">
+     <div class="section-title" id="2.string">
+         Introduction to Strings
+     </div>
+       <div class="notes">
+         <p>
+           A <b>string</b> is a sequence of characters contained within quotes--single or double.  It must start and end with the same type of quote character, but can contain the other type within it. Keep an eye on how the python interpreter changes the color when strings are inserted.  Strings can be assigned to variables.
+         </p>
+         <p>
+          <b>Concatenation</b>: Using the operator (+) to link things together.
+          <br>
+          <br>
+          Strings can be added to one another, and they can be multiplied by integers, but they cannot be added to integers.  However, they can be concatenated if the number is turned into a string: <span class="code">str(n) + "string"</span>
+         </p>
+      </div>
+    </div>
+    <div class="section">
+     <div class="section-title" id="2.find">
+         .find
+     </div>
+       <div class="notes">         
+         <p>
+          <span class ="code"> .find</span> will find a character within a string. This returns the location where the character, or the first character in a sequence of them, is. So <span class = "code">"E_of_E_String_E".find("E")</span> will return 0. "E" occurs in the first character of the string. And <span class = "code"> "E_of_E_String_E".find("E", 1)</span> will return the location of the second instance of the search term--5. Switching out the 1 for a 6 will return the location of the third instance. 
+          Storing a location within another string as a variable makes it reusable.  
+         </p>
+            <div class = "code_box">
+              the_string = "The best dog ever: Penelope" 
+              dog_name_location = the_string.find("Penelope") 
+              best_dog = the_string[dog_name_location:] 
+              print best_dog + "! " + "The best dog is " + best_dog + "." 
+              >>> Penelope! The best dog is Penelope. 
+            </div>
+       </div>
+    </div>
+   </div>
+ <div class="unit" id="Unit-2.3">
+   <h2>Unit Two.Three</h2>
+     <div class="section" id="2.fun">
+       <div class="section-title">
+         Functions
+       </div>
+          <div class="notes">
+            <p> 
+              A <b>function</b> takes <b>input</b>, works with it, and then produces <b>output</b>. Structurally, a function must be written with the starting term <span class ="code">def</span>, given <b>parameters</b> contained within parentheses, specifications as to what must be done with the parameters, and have a <span class ="code">return</span> command. Without a return command, the computer will not produce anything. 
+            </p>
+            <p>
+              When <b>calling</b> a function, values must be specified to replace the parameters and it must be called by name.  This way, a programmer can call a function repetitively without having to rewrite the entire process.
+            </p>
+              <div class="code_box"> 
+                def cube(x): 
+                <span class="indent">answer = x * x * x</span>
+                <span class="indent">return answer</span>
+                
+                print cube(5)s
+                >>>125
+              </div>
+        </div>
+      </div>
+    </div>
+ <div class="unit" id="Unit-2.4">
+   <h2>Unit Two.Four</h2>
+     <div class="section" id="2.eqcomp">
+       <div class="section-title">
+         Equality Comparisons
+       </div>
+          <div class="notes">
+             <p>
+                <b>Equality Comparisons</b> can be used independently or within functions. Signs are less and greater than <span class ="code"> &lt; & > </span>; equal and not equal <span class ="code"> == & != </span>. Strings can be compared with one another, but numbers and strings cannot.
+             </p>
+          </div>
+     </div>
+     <div class="section" id="2.loops">
+       <div class="section-title">
+         Control Flow & Loops: If and While
+       </div>
+          <div class="notes">       
+            <p> 
+              <span class ="code">If</span> statements are evaluated for veracity, and if they're true, they run, but if not, they return false.  They're one and done, so to speak.  But <span class ="code">loops</span>, on the other hand, will continue to run until they're false, or encounter a break.  A <span class ="code">break</span> will stop the loop even if the expression is true.  
+            </p>
+            <p>
+              When <b>calling</b> a function, values must be specified to replace the parameters and it must be called by name.  This way, a programmer can call a function repetitively without having to rewrite the entire process.
+            </p>
+              <div class="code_box"> 
+               <b>While, If, Break Structure</b> 
+
+               <b>While</b>
+
+               counter = 0 
+               while counter &lt; 10: 
+                  <span class = "indent">print counter </span>
+                  <span class = "indent">counter = counter + 1 </span>
+                  
+                <b>If</b>
+
+                  def is_friend(name): 
+                    <span class ="indent">if name[0]=="D"</span>
+                      <span class ="dblindent">return True</span>
+                    <span class ="indent">else:</span>
+                      <span class ="dblindent">return False</span>
+
+                  print name('Daffney')
+                  print name('Fred')
+                  >>>True 
+                  >>>False 
+                  
+                  <b>Break Structure</b>
+
+                  while &lt;Test Expression&gt;:
+                    <span class ="indent">&lt;code&gt;</span>
+                    <span class ="indent">if &lt;break test&gt;:</span>
+                      <span class ="dblindent">Break</span>
+                    <span class ="indent">&lt;More Code&gt;</span>
+                  &lt;Next function&gt;
+              </div>
+          </div>
+     </div>
+     <div class="section" id="2.else">
+       <div class="section-title">
+         Control Flow & Loops: Else
+       </div>
+          <div class="notes">
+             <p>
+              Instead of accounting for every outcome, which can lead to long, complex code, one can use the keyword <span class="code">else</span> as we saw in the previous example code (there are twenty five other letters a name could start with...)
+             </p>
+                <div class="code_box"> 
+                 <b>Code without Else</b>
+                  def bigger (x,y):
+                    <span class = "indent">if x > y:</span>
+                        <span class ="dblindent">return x</span>
+                    <span class = "indent">if y > x:</span>
+                        <span class ="dblindent">return y</span>
+                    <span class = "indent">if x == y:</span>
+                        <span class ="dblindent">return x</span>
+                  print bigger(2,7)
+                  >>> 7
+                  print bigger(3,2)
+                  >>> 3
+                  print bigger(3,3)
+                  >>> 3
+                </div>
+                <div class="code_box"> 
+                  <b>With Else</b>
+                  def bigger (x,y):
+                      <span class = "indent">if x > y: </span>
+                        <span class = "dblindent">return x</span>
+                      <span class = "indent">else: </span>
+                        <span class = "dblindent">return y</span>
+                  print bigger(2,7)
+                  >>> 7
+                  print bigger(3,2)
+                  >>> 3
+                  print bigger(3,3)
+                  >>> 3
+                </div>
+          </div>
+     </div>
+     <div class="section" id="2.orand">
+       <div class="section-title">
+         Control Flow & Loops: Using Or and-per-se And
+       </div>
+          <div class="notes">
+             <p>
+              Two other helpful keywords/options are <span class="code">Or</span> & <span class="code">And</span>.  An <span class="code">Or</span> code only evaluates as necessary; the code will return a true result as soon as it hits a true statement, even if the next possible option is an error. However, it will not return a false result if it encounters an error while continuing to search for a truth. It will return an error message.  Using <span class="code">Or</span> is a little more straightforward, as it's typed out in the code. While <span class="code">And</span> seems to be implied with indentation.
+            </p>
+              <div class="code_box"> 
+               <b>Or</b> 
+
+                def is_friend(name): 
+                    <span class ="indent">if name[0]=="D" or name[0]=="V"</span>
+                      <span class ="dblindent">return True</span>
+                    <span class ="indent">else:</span>
+                      <span class ="dblindent">return False</span>
+
+                print name('Daffney')
+                print name('Fred')
+                print name('Velma')
+                >>>True 
+                >>>False 
+                >>>True 
+              </div>
+              <div class="code_box"> 
+               <b>And</b> 
+
+               def is_friend(name): 
+                    <span class ="indent">if name[0]=="D":</span>
+                      <span class ="dblindent">if name[1]=="a":</span>
+                        <span class ="tripindent">return True</span>
+                      <span class ="dblindent">else:</span>
+                        <span class ="tripindent">return False</span>
+                    <span class="indent">else:</span>
+                      <span class ="dblindent">return False</span>
+                      
+                print name('Daffney')
+                print name('Fred')
+                print name('Diane')
+                >>>True 
+                >>>False 
+                >>>False 
+              </div>
+          </div>
+     </div>
+     <div class="section" id="2.max">
+       <div class="section-title">
+         Max Keyword
+       </div>
+          <div class="notes">
+             <p>
+              What if we wanted to go bigger than the above-mentioned function "bigger"? What if we wanted the biggest? We have several options to get there, as usual.  But one really handy way: the max code.
+             </p>
+              <div class="code_box"> 
+                def biggest(x,y,z):
+                    <span class = "indent">if x > y: </span>
+                      <span class = "dblindent">if x > z</span>
+                        <span class = "tripindent">return x </span>
+                      <span class = "dblindent">else:</span>
+                        <span class = "tripindent">return z </span>
+                    <span class = "indent">else:</span>
+                      <span class = "dblindent">if y > z</span>
+                        <span class = "tripindent">return y </span>
+                      <span class = "dblindent">else:</span>
+                        <span class = "tripindent">return z </span>
+
+                print biggest(2,9,7)
+                >>> 9
+                print biggest(3,2,9)
+                >>> 9
+                print biggest(9,9,3)
+                >>> 9
+              </div>
+              <br>
+              <br>
+              <div class="code_box"> 
+                <b>Efficient Way: Predefined Function</b>
+                def biggest(x,y,z):
+                    <span class = "indent">return bigger(bigger(x,y),z) </span>
+
+                print biggest(2,9,7)
+                >>> 9
+                print biggest(3,2,9)
+                >>> 9
+                print biggest(9,9,3)
+                >>> 9
+                
+                <b>Best Way: Max</b>
+                def biggest(x,y,z):
+                    <span class = "indent">return max(x,y,z)</span>
+
+                print biggest(2,9,7)
+                >>> 9
+                print biggest(3,2,9)
+                >>> 9
+                print biggest(9,9,3)
+                >>> 9
+              </div>
+          </div>
+     </div>
+   </div>
+ <div class="unit" id="Unit-2.5">
+   <h2>Unit Two.Five</h2>
+     <div class="section" id="2.bug">
+       <div class="section-title">
+         Debugging
+       </div>
+          <div class="notes">
+             <p>
+              Errors and glitches (<b>Bugs</b>) are a normal part of programming, so the best way to minimize down-time and maximize both efficiency and productivity is to have a systematic way of finding and fixing them.  An important side note: when something doesn't behave properly, the errant code doesn't have to be useless.  Unexpected results can lead to a new way of doing something else.  Theoretically.  
+             </p>
+             <p> 
+               Reading the actual error message will help pinpoint the mistaken code, as well as define what kind of error it is.  Further, "Googling" the error will lead to possible solutions.
+             </p>
+             <p>
+               When re-purposing a snippet of code from another source doesn't work correctly, try commenting out the broken code and copying in the source code.  This not only makes sure that the source is viable, but allows for easy rewriting with minimized chance for error. 
+             </p>
+             <p>
+               If code behaves oddly try adding in print statements until you come to the line that doesn't work as intended.
+             </p>
+             <p>
+               Keep multiple versions, and check for errors as you edit.  Undo doesn't quite do the trick. A spare file will do just as well as powerful programs designed for version organization.
+             </p>
+          </div>
+     </div>
+ </div>
+ <div class="unit" id="Unit-2.6">
+   <h2>Unit Two.Six</h2>
+    <div class="section" id="2.lists">
+       <div class="section-title">
+            Lists
+       </div>
+        <div class="notes">
+          <p> 
+            While a string is a sequence of characters, a list can be a sequence of anything.  Lists allow for the organization of information. Like strings, lists can be accessed, sliced, and contain other lists.  
+          </p>
+            <div class="code_box">   
+              string_list = ['HTML', 'CSS', 'Python']
+              print string_list
+              >>>['HTML', 'CSS', 'Python']
+              
+              number_list = [3.14159, 2.71828, 1.61803]
+              print number_list
+              >>>[3.14159, 2.71828, 1.61803]
+              
+              mixed_list = ['Hello!', 42, "Goodbye!"]
+              print mixed_list
+              >>>['Hello!', 42, "Goodbye!"]
+              
+              list_with_lists = [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']
+
+              print list_with_lists
+              print list_with_lists[2]
+              print list_with_lists[2][1]
+              >>>[3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']
+              >>>['red', 'green', 'blue']
+              >>>green
+            </div>
+          <p>
+            Nesting lists allows a user to group associated data.  By using variables to define these groups, application of the information becomes easier.  Assigned variables then become lists of the items they reference, and can themselves be accessed: 
+          </p>  
+            <div class="code_box">
+              <pre>nested_list = [['Mutation', 'Strings are not mutable, but lists are.'],
+               ['CSS' , 'Cascading Style Sheets give pages style'],
+               ['Python', 'Python is a programming language'],
+               ['Lists', 'Lists are a data structure that let you organize information']]</pre>
+
+              first_concept = nested_list[0]
+              print first_concept 
+              print first_concept[1]
+              >>>['Mutation', 'Strings are not mutable, but lists are.']
+              >>>Strings are not mutable, but lists are.
+
+              first_title = first_concept[0]
+              first_description = first_concept[1]
+              print first_title + ':  ' + first_description
+              >>>Mutation: Strings are not mutable, but lists are.
+            </div>
+          <p>
+            Numbers in lists can be manipulated like regular numbers.
+          </p>
+            <div class="code_box">
+              <span class="dblindent"><span class="tripindent">Name  Capital  Populations (millions)</span></span>
+              countries = [['China','Beijing',1350],
+              <span class="dblindent"><span class="tripindent">['India','Delhi',1210],</span></span>
+              <span class="dblindent"><span class="tripindent">['Romania','Bucharest',21],</span></span>
+              <span class="dblindent"><span class="tripindent">['United States','Washington',307]]</span></span>
+
+                # What multiple of Romania's population is the population
+                # of China? Calculate this by accessing the list and
+                # dividing the population of China (1350)
+                # by the population of Romania (21).
+                
+                multipleRC = countries[0][2] / countries[2][2]
+                print multipleRC
+                >>>64
+            </div>
+              <p>
+                Adding a decimal to an integer will return more specific solutions.
+              </p>
+        </div>
+    </div>
+    <div class="section" id="2.mutation">
+        <div class="section-title">
+            Mutation
+        </div>
+        <div class="notes">
+          <p>
+            Redefining a variable doesn’t change the value of the original definition, just removes our ability to access it. Strings are not mutable, lists are.  If two variables refer to the same list, changing a value in one will change the value of the other.
+          </p>
+            <div class="code_box">
+              Replacing values in lists:
+                  
+              stooges = ['Moe','Larry','Curly']
+
+              # Write one line of code that changes
+              # the value of stooges to be:
+
+              ['Moe','Larry','Shemp']
+
+              # but does not create a new List object.
+
+              stooges[2]='Shemp'
+              print stooges
+              >>>['Moe','Larry','Shemp']
+            </div>
+        </div>
+    </div>
+    <div class="section" id="2.a">
+        <div class="section-title">
+            Aliasing
+        </div>
+        <div class="notes">
+          <p>
+            Having multiple ways to refer to the same value is call Aliasing. If a variable is assigned to another variable that is assigned a value, the first variable has the value of the second variable. Changing one will change the other.  
+          </p>
+            <div class="code_box">
+              Agent = [‘j’,’a’,’m’,’e’,’s’]
+              Spy = Agent
+              Agent = [0,0,7]
+              
+              print Spy
+              print Agent
+              >>>['j', 'a', 'm', 'e', 's']
+              >>>[0, 0, 7]
+              
+              # Spy still points to the original value
+              # But Agent points to a new one
+
+              Agent = [0,0,7]
+              Spy = Agent
+              Agent [2] = Spy[2] + 1
+
+              print Spy, Agent
+              >>>[0,0,8] [0,0,8]    
+          </div>
+        </div>
+    </div>
+    <div class="section" id="2.operands">
+        <div class="section-title">
+            List Operands
+        </div>
+          <div class="notes">
+            <p>
+              <span class="code">Append</span> is a method (like .find) that mutates a list instead of creating a new one.  Items appended on in the same command are treated as a single item by the list. Append is different from <span class="code">+</span>, which adds each item from one list into the other.
+            </p>
+                <div class="code_box">
+                  &lt;list&gt;.append(&lt;element&gt;)
+                  &lt;list&gt;+&lt;list&gt;
+                </div>
+            <p>
+              <span class="code">Len</span> counts elements in a collection, either listed or in a string. 
+            </p>
+              <div class="code_box">len(&lt;element&gt;)   
+                len([0,1]) -> 2
+                len([‘a’,[’b’,[’c’,]]]) ->2
+                len(“udacity”) -> 7
+
+                p = [1,2]
+                p.append(3)
+                p = p + [4,5]
+                len(p) -> 5
+
+                p = [1,2] #len ->2
+                q = [3,4] #len ->2
+                p.append(q) 
+                len(p)->3
+              </div>
+            <p>
+              <span class="code">While loops</span> and <span class="code">for loops</span> can be ran on lists and nested lists.  <span class="code">While loops</span> require an increase in index variable, or some other method, to eventually cause the loops to return false and quit running.  If they never return false, they're an infinite loop. No bueno.
+            </p>
+              <div class="code_box">
+                while&lt;test&gt;:
+                   <span class="indent"> &lt;block&gt;</span>
+
+                def print_all_elements(p):
+                    <span class="indent">while i &lt;= len(p)-1: # or i &lt; len(p)</span>
+                    <span class="dblindent">print p[i]</span>
+                    <span class="dblindent">i = i + 1</span>
+
+                
+                For &lt;name&gt; in &lt;list&gt;:
+                    <span class="indent"> &lt;block&gt;</span>
+
+                def print_all_elements(p):
+                    <span class="indent">for e in p:</span>
+                    <span class="dblindent">print e</span>
+
+                example_list_1 = ['a', 'b', 'c', 'd']
+                for thing in example_list_1:
+                <span class="indent">print thing</span>
+                >>>a
+                >>>b
+                >>>c
+                >>>d
+
+                  
+                example_list_2 = [['China', 'Beijing'],
+                <span class="octindent">['USA'  , 'Washington D.C.'],</span>
+                <span class="octindent">['India', 'Delhi']]</span>
+                for country_with_capital in example_list_2:
+                    <span class="indent">country = country_with_capital[0]</span>
+                    <span class="indent">capital = country_with_capital[1]</span>
+                    <span class="indent">print capital + ' is the capital of ' + country</span>
+
+                >>>Beijing is the capital of China
+                >>>Washington D.C. is the capital of USA
+                >>>Delhi is the capital of India  
+              </div>
+
+            <p>
+              Another operation is <span class="code">index</span>, which finds the first location within a list of the desired value.  If the value is not within the list, it will return an error message that the value is not in the list.  Otherwise, one can use <span class="code">in</span> or <span class="code">not in</span>. Both of these print out true or false. 
+            </p>
+              <div class="code_box">
+                &lt;list&gt;.index(&lt;value&gt;)
+
+                
+                &lt;value&gt;in&lt;list&gt;
+
+                &lt;value&gt;not in&lt;list&gt;
+
+                def find.element(p,t):
+                    <span class="indent">if t in p:</span>
+                    <span class="dblindent">return p.index(t)</span>
+                    <span class="indent">else:</span>
+                    <span class="dblindent">  return -1</span>
+                      
+                def find.element(p,t):
+                   <span class="indent"> if t not in p:</span>
+                   <span class="dblindent">return -1</span>
+                   <span class="indent">return p.index(t)</span>
+              </div>
+          </div>
+    </div>
+ </div>
+ <div class="unit" id="Unit-2.7">
+   <h2>Unit Two.Seven</h2>
+    <div class="section" id="2.probsolv">
+       <div class="section-title">
+            Solving Problems
+       </div>
+        <div class="notes">
+          <ol>
+            <li>Don't Panic</li>
+            <li>Define Inputs</li>
+            <li>Define Outputs</li>
+            <li>Hand-write Examples</li>
+            <li>Simple Mechanical Solution</li>
+            <li>Develop Incrementally and Test Frequently</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+</body>
